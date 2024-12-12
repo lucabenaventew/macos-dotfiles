@@ -3,6 +3,7 @@ local M = {}
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>s", ":w<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>q", ":q<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true })
 
 vim.keymap.set("n", "<leader>cs", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
